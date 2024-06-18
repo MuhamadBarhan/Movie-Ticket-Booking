@@ -1,0 +1,44 @@
+.navbar {
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    height: 4rem;
+    background: white;
+}
+
+.nav-logo {
+    object-fit: cover;
+    height: 1.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu-item {
+    margin: 1rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:450px) {
+    .nav-menu {
+        display: none;
+    }
+    
+}

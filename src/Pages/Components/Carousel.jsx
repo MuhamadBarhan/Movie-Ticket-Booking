@@ -12,7 +12,7 @@ const Carousel = ({ images }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     pauseOnHover: false,
     pauseOnFocus: false,
     centerMode: true,

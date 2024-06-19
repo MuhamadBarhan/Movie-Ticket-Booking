@@ -19,6 +19,7 @@
 .movie-card {
     margin: 1rem 0;
     margin-right: 2rem;
+    cursor: pointer;
 }
 
 .movie-card-image {

@@ -1,6 +1,21 @@
+.video-container {
+  position: relative;
+}
+
+.spinner-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+}
+
 .video-responsive iframe {
   width: 640px;
   height: 390px;
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (max-width:450px) {

@@ -17,6 +17,8 @@
 .cast-container {
     display: flex;
     gap: 2rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 
 .cast-image {

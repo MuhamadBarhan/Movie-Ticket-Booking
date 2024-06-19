@@ -6,6 +6,6 @@
 @media screen and (max-width:450px) {
   .video-responsive iframe {
     width: 100%;
-    height: 200px;
+    height: 250px;
   }
 }

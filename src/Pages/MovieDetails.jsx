@@ -20,7 +20,7 @@ const MovieDetails = () => {
       {movie.cast.map((movieCast, index) => (
         <div className="cast-item" key={index}>
           <img src={movieCast.link} alt={movieCast.name} className='cast-image'/>
-          <p>{movieCast.name}</p>
+          <p className='cast-name'>{movieCast.name}</p>
         </div>
       ))}
       </div>

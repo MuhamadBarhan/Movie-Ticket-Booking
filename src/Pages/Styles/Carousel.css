@@ -87,4 +87,8 @@
   .carousel-item::before {
     width: 95%;
   }
+
+  .slick-dots {
+    width: auto;
+  }
 }

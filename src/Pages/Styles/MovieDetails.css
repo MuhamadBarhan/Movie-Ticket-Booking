@@ -2,6 +2,32 @@
     margin: 1rem;
 }
 
+/* Youtube Player */
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  background-color: #e9e9e9;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video-container iframe {
+  width: 640px;
+  height: 390px;
+}
+
+.hidden {
+  display: none;
+}
+
 .movie-heading {
     font-size: 18px;
     font-weight: 600;
@@ -42,3 +68,16 @@
 .cast-name {
     font-size: 14px;
 }
+
+
+@media screen and (max-width:450px) {
+
+    .video-container {
+      display: block;
+    }
+  
+    .video-responsive iframe {
+      width: 100%;
+      height: 250px;
+    }
+  }

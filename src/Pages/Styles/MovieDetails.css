@@ -10,8 +10,18 @@
   align-items: center;
   z-index: 10;
   width: 100%;
-  height: 90vh;
+  height: 30vh;
+}
+
+.video-loader {
+  height: 250px;
+  width: 100%;
   background-color: #e9e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: grey;
 }
 
 .video-container {

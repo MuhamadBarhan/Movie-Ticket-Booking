@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { movies_recommended, movies_fun } from '../assets/Movies';
 import './Styles/MovieDetails.css'
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const MovieDetails = () => {
 
@@ -32,9 +33,12 @@ const MovieDetails = () => {
   return (
     <>
       {loading && (
+        <>
+          <span className='video-loader'><FontAwesomeIcon icon={faYoutube}/></span><br></br>
         <div className="spinner-container">
-          <ClipLoader color="#df1827" loading={loading} size={30} />
+          <ClipLoader color="#df1827" loading={loading} size={20} />
         </div>
+        </>
       )}
       <div className={`movie-details ${loading ? 'hidden' : ''}`}>
         <div className="video-container">

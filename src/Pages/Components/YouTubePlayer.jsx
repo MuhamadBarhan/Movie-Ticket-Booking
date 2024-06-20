@@ -21,6 +21,7 @@ const YouTubePlayer = ({ videoId }) => {
       {loading && (
         <div className="spinner-container">
           <ClipLoader color="#df1827" loading={loading} size={50} />
+          <p style={{color:'#df1827' , fontSize:'14px'}}>Loading trailer...</p>
         </div>
       )}
       <div className={`video-responsive ${loading ? 'hidden' : ''}`}>

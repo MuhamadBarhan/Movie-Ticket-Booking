@@ -59,6 +59,7 @@ const Carousel = ({ images }) => {
 
   const handleButtonClick = (image, index) => {
     console.log(`Button clicked for image ${index}:`, image);
+    navigate(`/${image.id}`)
     
   };
 

@@ -61,6 +61,20 @@
   bottom: 10px;
 }
 
+.slick-dots li button:before {
+  font-size: 5px;
+  color: var(--sec-color);
+}
+.slick-dots li {
+  margin: 0 5px; /* Horizontal padding between dots */
+}
+
+/* Customize the active dot */
+.slick-dots li.slick-active button:before {
+  color: var(--primary-color); 
+  font-size: 7px; 
+}
+
 .play-button {
   position: absolute;
   bottom: 5%;
@@ -86,9 +100,5 @@
 
   .carousel-item::before {
     width: 95%;
-  }
-
-  .slick-dots {
-    width: auto;
   }
 }

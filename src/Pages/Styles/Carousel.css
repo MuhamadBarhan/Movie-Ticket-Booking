@@ -63,16 +63,13 @@
 
 .play-button {
   position: absolute;
-  bottom: 30%;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
+  bottom: 5%;
+  right: 5%;
+  background-color: white;
+  color: var(--primary-color);
   cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
+  font-size: 50px;
+  border-radius: 50%;
   z-index: 10;
   cursor: pointer;
 }

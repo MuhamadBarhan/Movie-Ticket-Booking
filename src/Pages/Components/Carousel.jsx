@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCirclePlay } from '@fortawesome/free-regular-svg-icons';
+import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 import '../Styles/Carousel.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -69,7 +69,7 @@ const Carousel = ({ images }) => {
         {images.map((image, index) => (
           <div key={index} className="carousel-item">
             <img src={image.link} alt={`carousel-item-${index}`} />
-            <span className="play-button" onClick={() => handleButtonClick(image, index+1)}><FontAwesomeIcon icon={faCirclePlay} style={{color:'#df1827'}}/> Watch Trailer</span>
+            <FontAwesomeIcon icon={faCirclePlay} className="play-button" onClick={() => handleButtonClick(image, index+1)}/>
           </div>
         ))}
       </Slider>

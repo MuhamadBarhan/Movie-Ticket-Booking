@@ -1,9 +1,12 @@
 import React from 'react'
 import '../Styles/Navbar.css'
 import logo from '../../assets/logo.png'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="navbar">
         <img src={logo} alt="logo" className='nav-logo'/>
@@ -13,7 +16,7 @@ const Navbar = () => {
             <Link to='/booked' className='nav-menu-item'>Booked</Link>
         </div>
         <div className="nav-login">
-            <button className='login-btn'>Login</button>
+            <button className='login-btn' onClick={()=>navigate('/login')}>Login</button>
         </div>
     </div>
   )

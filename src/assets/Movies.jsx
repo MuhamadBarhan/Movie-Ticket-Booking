@@ -1,12 +1,12 @@
 export const images = [
-  'https://assets-in.bmscdn.com/discovery-catalog/events/et00055008-txnsnrpgpg-landscape.jpg',
-  'https://cdna.artstation.com/p/assets/images/images/025/095/038/large/almu-redondo-aladdin-banner-horizontal.jpg?1584597967',
-  'https://w0.peakpx.com/wallpaper/204/388/HD-wallpaper-movie-frozen.jpg',
-  'https://assets-in.bmscdn.com/discovery-catalog/events/et00006168-ylzbrzeduv-landscape.jpg',
-  'https://c4.wallpaperflare.com/wallpaper/943/868/835/ice-age-4-continental-drift-2012-ice-age-4-movie-poster-wallpaper-preview.jpg',
-  'https://i0.wp.com/www.heyuguys.com/images/2012/07/Ice-Age-Continental-Drift-poster-2.jpg?ssl=1',
-  'https://fifthsun.com/cdn/shop/articles/5sun_lion_king_blog_1024x.jpg?v=1603994032',
-  'https://i.ebayimg.com/images/g/VNwAAOSwu3lkuGJI/s-l1600.jpg',
+  {id: 1, link:'https://assets-in.bmscdn.com/discovery-catalog/events/et00055008-txnsnrpgpg-landscape.jpg'},{
+  id: 2, link:'https://cdna.artstation.com/p/assets/images/images/025/095/038/large/almu-redondo-aladdin-banner-horizontal.jpg?1584597967',
+  id: 3, link:'https://w0.peakpx.com/wallpaper/204/388/HD-wallpaper-movie-frozen.jpg'},{
+  id: 4, link:'https://assets-in.bmscdn.com/discovery-catalog/events/et00006168-ylzbrzeduv-landscape.jpg'},{
+  id: 5, link:'https://c4.wallpaperflare.com/wallpaper/943/868/835/ice-age-4-continental-drift-2012-ice-age-4-movie-poster-wallpaper-preview.jpg'},{
+  id: 6, link:'https://i0.wp.com/www.heyuguys.com/images/2012/07/Ice-Age-Continental-Drift-poster-2.jpg?ssl=1'},{
+  id: 7, link:'https://fifthsun.com/cdn/shop/articles/5sun_lion_king_blog_1024x.jpg?v=1603994032'},{
+  id: 8, link:'https://i.ebayimg.com/images/g/VNwAAOSwu3lkuGJI/s-l1600.jpg'},
 ];
 
 export const movies_recommended = [

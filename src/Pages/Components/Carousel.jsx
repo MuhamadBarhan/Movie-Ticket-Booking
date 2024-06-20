@@ -2,14 +2,19 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCirclePlay } from '@fortawesome/free-regular-svg-icons';
 import '../Styles/Carousel.css';
+import { useNavigate } from 'react-router-dom';
 
 const Carousel = ({ images }) => {
+
+  const navigate = useNavigate();
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
@@ -52,12 +57,18 @@ const Carousel = ({ images }) => {
     ]
   };
 
+  const handleButtonClick = (image, index) => {
+    console.log(`Button clicked for image ${index}:`, image);
+    
+  };
+
   return (
     <div className="carousel-container">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="carousel-item">
-            <img src={image} alt={`carousel-item-${index}`} />
+            <img src={image.link} alt={`carousel-item-${index}`} />
+            <span className="play-button" onClick={() => handleButtonClick(image, index+1)}><FontAwesomeIcon icon={faCirclePlay} style={{color:'#df1827'}}/> Watch Trailer</span>
           </div>
         ))}
       </Slider>

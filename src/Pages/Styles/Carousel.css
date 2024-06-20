@@ -6,8 +6,22 @@
 
 .carousel-item {
   padding: 0 10px;
-  /* Adjust the padding to control the partial visibility */
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 97%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  border-radius: 10px;
 }
 
 .carousel-item img {
@@ -37,18 +51,29 @@
 
 .slick-prev {
   left: 10px;
-  /* Adjust position from the left */
 }
 
 .slick-next {
   right: 10px;
-  /* Adjust position from the right */
 }
 
 .slick-dots {
   bottom: 30px;
-  /* Adjust the position of the dots */
+}
 
+.play-button {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  z-index: 10;
 }
 
 
@@ -59,5 +84,9 @@
 
   .carousel-item img {
     height: 30vh;
+  }
+
+  .carousel-item::before {
+    width: 95%;
   }
 }

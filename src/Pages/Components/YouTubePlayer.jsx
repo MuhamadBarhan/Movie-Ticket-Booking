@@ -20,7 +20,7 @@ const YouTubePlayer = ({ videoId }) => {
     <div className="video-container">
       {loading && (
         <div className="spinner-container">
-          <ClipLoader color="#df1827" loading={loading} size={50} />
+          <ClipLoader color="#df1827" loading={loading} size={30} />
           <p style={{color:'#df1827' , fontSize:'14px'}}>Loading trailer...</p>
         </div>
       )}

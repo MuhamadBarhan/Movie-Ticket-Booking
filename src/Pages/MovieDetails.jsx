@@ -34,7 +34,6 @@ const MovieDetails = () => {
       {loading && (
         <div className="spinner-container">
           <ClipLoader color="#df1827" loading={loading} size={30} />
-          <p style={{ color: '#df1827', fontSize: '14px' }}>Loading trailer...</p>
         </div>
       )}
       <div className={`movie-details ${loading ? 'hidden' : ''}`}>

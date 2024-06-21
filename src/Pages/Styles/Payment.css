@@ -1,0 +1,93 @@
+.payment-form {
+    width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #ff0066;
+  }
+  
+  .payment-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .payment-option {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+  
+  .payment-option.selected {
+    border-color: #ff0066;
+    background-color: #fce4ec;
+  }
+  
+  .payment-option-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .payment-option-logo img {
+    margin: 0 5px;
+    width: 40px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .credit-card-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    flex: 1 1 45%;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .cancel-button, .confirm-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #ff0000;
+  }
+  
+  .confirm-button {
+    background-color: #00cc00;
+  }
+  

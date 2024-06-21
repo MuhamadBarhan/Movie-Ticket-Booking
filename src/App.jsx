@@ -5,6 +5,8 @@ import MovieDetails from './Pages/MovieDetails'
 import ScrollToTop from './Pages/Components/ScrollToTop'
 import Login from './Pages/Login'
 import BuyTickets from './Pages/BuyTickets'
+import SeatBooking from './Pages/SeatBooking'
+import PaymentForm from './Pages/Payment'
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
           <Route path='/:title/:id' element={<MovieDetails/>}/>
           <Route path='/:id' element={<MovieDetails/>}/>
           <Route path='/buytickets' element={<BuyTickets/>}/>
+          <Route path='/seatbooking' element={<SeatBooking/>}/>
+          <Route path='/payment' element={<PaymentForm/>}/>
         </Routes>
       </BrowserRouter>
       

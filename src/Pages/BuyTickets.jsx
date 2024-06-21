@@ -39,7 +39,7 @@ const BuyTickets = () => {
       </div>
       <div className="showtimes">
         {showTimes.map(([screen, times], screenIndex) => (
-          <div key={screenIndex} className="screen">
+          <div key={screenIndex} className="screens">
             <div className="screen-title">{screen}</div>
             <div className="time-buttons">
               {times.map((time, timeIndex) => (

@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import MovieDetails from './Pages/MovieDetails'
 import ScrollToTop from './Pages/Components/ScrollToTop'
 import Login from './Pages/Login'
+import BuyTickets from './Pages/BuyTickets'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/login' element={<Login/>}/>
           <Route path='/:title/:id' element={<MovieDetails/>}/>
           <Route path='/:id' element={<MovieDetails/>}/>
+          <Route path='/buytickets' element={<BuyTickets/>}/>
         </Routes>
       </BrowserRouter>
       

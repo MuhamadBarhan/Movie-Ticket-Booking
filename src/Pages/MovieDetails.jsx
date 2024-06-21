@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import YouTube from 'react-youtube';
 import ClipLoader from 'react-spinners/ClipLoader';
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { movies_recommended, movies_fun } from '../assets/Movies';
@@ -13,6 +13,7 @@ const MovieDetails = () => {
   const params = useParams();
   const mergedMovies = [...movies_recommended, ...movies_fun];
   const movie = mergedMovies.find((element) => element.id === parseInt(params.id));
+  const navigate = useNavigate();
 
   const [loading, setLoading] = useState(true);
 
@@ -57,6 +58,7 @@ const MovieDetails = () => {
             </div>
           ))}
         </div>
+        <div className='book-ticket'><button className='book-btn' onClick={()=>navigate('/buytickets', {state:{movieData:movie}})}>Book Tickets</button></div>
       </div>
     </>
   )

@@ -1,7 +1,7 @@
 .movie-container {
     margin: 1rem 0;
     padding: 2rem 3rem;
-    background-color: white;
+    background-color: var(--container-color);
 }
 
 .movie-card-container {

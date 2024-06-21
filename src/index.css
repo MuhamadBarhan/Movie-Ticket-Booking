@@ -1,11 +1,11 @@
+:root {
+    --primary-color:#df1827;
+    --sec-color:#2b2b2b;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
     background-color: #f0f0f0;
     height: 100vh;
-}
-
-:root {
-    --primary-color:#df1827;
-    --sec-color:#2b2b2b;
 }

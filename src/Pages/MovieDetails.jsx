@@ -58,10 +58,12 @@ const MovieDetails = () => {
             </div>
           ))}
         </div>
-        <div className='book-ticket'><button className='book-btn' onClick={()=>navigate('/buytickets', {state:{movieData:movie}})}>Book Tickets</button></div>
+        <div className='book-ticket'><button className='book-btn' >Book Tickets</button></div> 
       </div>
     </>
   )
 }
 
 export default MovieDetails
+
+// onClick={()=>navigate('/buytickets', {state:{movieData:movie}})}

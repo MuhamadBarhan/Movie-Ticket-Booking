@@ -31,18 +31,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ccc;
+    background-color: white;
+    border: 1px solid #228B22;
     cursor: pointer;
     border-radius: 5px;
   }
   
   .seat.selected {
-    background-color: #ff0066;
+    background-color: #228B22;
     color: white;
   }
   
   .seat.reserved {
-    background-color: red;
+    background-color: #ccc;
+    border: none;
     color: white;
     cursor: not-allowed;
   }
@@ -65,7 +67,7 @@
   
   .reserve-button {
     padding: 10px 20px;
-    background-color: #ff0066;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 5px;

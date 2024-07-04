@@ -28,9 +28,11 @@ const SeatBooking = () => {
     );
   };
 
+  console.log(selectedSeats);
+
   return (
     <div className="seat-booking">
-      <h2>Seat Booking</h2>
+      <h2>Select your seats</h2>
       <div className="screen">SCREEN</div>
       <div className="seats">
         {rows.map(row => (
@@ -60,7 +62,7 @@ const SeatBooking = () => {
           <span className="seat selected"></span> Selected
         </div>
         <div>
-          <span className="seat reserved"></span> Reserved
+          <span className="seat reserved"></span> Sold
         </div>
       </div>
       <button className="reserve-button" onClick={()=>navigate('/payment')}>Continue to Payment</button>

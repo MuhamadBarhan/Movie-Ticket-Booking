@@ -1,6 +1,23 @@
+.showtime-page {
+  background-color: aliceblue;
+  height: 100vh;
+}
+
+.bt-title {
+  padding: 1rem;
+  background-color: white;
+  margin: 0.2rem 0;
+  font-size: 18px;
+}
+
+.bt-title span{
+  margin: 1rem;
+}
+
 .showtime-selection {
-  width: 300px;
+  width: 400px;
   margin: auto;
+  margin-top: 2rem;
   font-family: Arial, sans-serif;
 }
 
@@ -15,6 +32,7 @@
   text-align: center;
   padding: 10px;
   cursor: pointer;
+  background-color: white;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 0 5px;
@@ -58,14 +76,12 @@
   color: white;
 }
 
-.time-button:hover {
-  background-color: #f0f0f0;
-}
+
 
 .continue-booking {
   width: 100%;
   padding: 10px;
-  background-color: #ff0066;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   border-radius: 5px;
@@ -74,4 +90,11 @@
 
 .continue-booking:hover {
   background-color: #e6005c;
+}
+
+@media screen and (max-width:450px) {
+  .showtime-selection {
+    width: auto;
+    margin: 2rem;
+  }
 }
